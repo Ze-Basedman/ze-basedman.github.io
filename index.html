@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bambus 🤠</title>
+</head>
+
+<body>
+    <div id="typing-text-container">
+     <span id="typing-text"></span>
+      </div>
+      
+    <br>
+    <div>
+        <br>
+        <br>
+        <a href="https://bambus.lol/projects">return redirect('/#projects')</a>
+    </div>
+    <br>
+</body>
+<script>
+const text = "hey, i'm bambus!";
+let index = 0;
+let typingTimer;
+
+function type() {
+  document.getElementById("typing-text").textContent = text.slice(0, index++);
+  if (index > text.length) {
+    index = 0;
+    document.getElementById("typing-text").classList.add("blink-cursor");
+    clearTimeout(typingTimer);
+  } else {
+    typingTimer = setTimeout(type, 53);
+  }
+}
+
+type();
+
+    </script>
+<style>
+    a {
+        font-size: 20px;
+        color: rgb(185, 185, 185);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #757575;
+    }
+    
+    a:active {
+        color: rgb(255, 0, 0);
+    }
+    
+    #typing-text-container {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+#typing-text {
+    font-family: monospace;
+    text-align: center;
+  border-right: 0.15em solid rgb(255, 255, 255);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+#typing-text.blink-cursor {
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: rgb(255, 255, 255);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+    
+    html,
+    body {
+        background-color: rgb(25, 30, 37);
+        font-family: monospace;
+        height: 100%;
+        margin: 0;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body {
+        color: white !important   ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+</style>
+
+</html>
