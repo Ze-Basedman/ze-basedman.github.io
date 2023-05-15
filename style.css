@@ -1,0 +1,22 @@
+body {
+  background-color: #040119;
+  margin: 120px;
+}
+
+a:link {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
