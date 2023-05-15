@@ -1,127 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ze</title>
-</head>
-
-<body>
-    <div id="typing-text-container">
-     <span id="typing-text"></span>
-      </div>
+<html>
+  <head>
+    <title>Zeyad's page</title>
+    <link rel="stylesheet" href="style.css">
+      </head>      
+	<body>
       
-    <br>
-    <div>
-        <br>
-        <br>
-        <a href="https://bambus.lol/projects">return redirect('/#projects')</a>
-    </div>
-    <br>
-</body>
-<script>
-const text = 'A 13 year old guy.' + 'From Egypt.\n Muslim.\n Straight.\n I am a programmer.\n I know: C#, C++, Python, Html, Css';
-let index = 0;
-let typingTimer;
+      <div style="text-align:center;">
+      <h1 style="color:#1054BF" "text-align:center;"> Zeyad's  page introduction </h1> 
+	</div>
+                                                   
+		<div style="text-align:center;">
+      <img src="image.png" width="180" height="150">
+		</div>
+		
+		<div style="color:#B00606">
+		<div style="text-align:center;">
+		<div style="font-size:150%;">
+          <pre>
+                                         
+A 13 year old guy.
+From Egypt.
+Muslim.
+Straight.
+I am a programmer. I know:
+C#, C++, Python, Html, Css
+                                    </pre>
 
-function type() {
-  document.getElementById("typing-text").textContent = text.slice(0, index++);
-  if (index > text.length) {
-    index = 0;
-    document.getElementById("typing-text").classList.add("blink-cursor");
-    clearTimeout(typingTimer);
-  } else {
-    typingTimer = setTimeout(type, 53);
-  }
-}
+<a href="https://github.com/Ze-Basedman" target="_blank">
+<img src="github.png" width="34">
+</a>
+                                                                                               
+<a href="https://www.snapchat.com/add/zsayed1001" target="_blank">
+<img src="snapchat.png" width="34">
+</a>
+		</div>
+		</div>
+        </div>
 
-type();
-
-    </script>
-<style>
-    a {
-        font-size: 20px;
-        color: rgb(185, 185, 185);
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: #757575;
-    }
-    
-    a:active {
-        color: rgb(255, 0, 0);
-    }
-    
-    #typing-text-container {
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-}
-
-#typing-text {
-    font-family: monospace;
-    text-align: center;
-  border-right: 0.15em solid rgb(255, 255, 255);
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-#typing-text.blink-cursor {
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-color: rgb(255, 255, 255);
-  }
-  50% {
-    border-color: transparent;
-  }
-}
-
-
-
-
-    
-    html,
-    body {
-        background-color: rgb(25, 30, 37);
-        font-family: monospace;
-        height: 100%;
-        margin: 0;
-    }
-    
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    body {
-        color: white !important   ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    
-    p {
-        font-size: 20px;
-    }
-    
-</style>
-
+  	</body>
 </html>
